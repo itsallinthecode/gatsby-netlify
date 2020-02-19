@@ -7,6 +7,10 @@
 module.exports = {
   siteMetadata: {
     title: "Gatsby-Bootstrap",
+    description: "This is the description of our website",
+    keywords: "gatsby, gatsbyjs project, gatsby bootstrap",
+    image: "/staic/gatsby.jpg",
+    url: "https://www.gatsbyjs.org",
   },
   plugins: [
     {
@@ -39,5 +43,6 @@ module.exports = {
         hostingWPCOM: false,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
