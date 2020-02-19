@@ -14,9 +14,9 @@ const Post = props => (
           <Card.Title
             dangerouslySetInnerHTML={{ __html: props.title }}
           ></Card.Title>
-          <Card.Text
-            dangerouslySetInnerHTML={{ __html: props.excerpt }}
-          ></Card.Text>
+          <Card.Text>
+            <div dangerouslySetInnerHTML={{ __html: props.excerpt }}></div>
+          </Card.Text>
           <Button variant="warning" href={props.readMore}>
             Read more...
           </Button>
