@@ -2,22 +2,28 @@ import React from "react"
 import { Card, Button } from "react-bootstrap"
 
 const Post = props => (
-  <div className="p-3">
-    <Card>
-      <Card.Img variant="top" src={props.image} />
-      <Card.Body>
-        <Card.Title
-          dangerouslySetInnerHTML={{ __html: props.title }}
-        ></Card.Title>
-        <Card.Text
-          dangerouslySetInnerHTML={{ __html: props.excerpt }}
-        ></Card.Text>
-        <Button variant="warning" href={props.readMore}>
-          Read more...
-        </Button>
-      </Card.Body>
-    </Card>
-  </div>
+  <post>
+    <div className="p-3">
+      <Card>
+        <Card.Img
+          variant="top"
+          src={props.image}
+          alt={props.alt || "default"}
+        />
+        <Card.Body>
+          <Card.Title
+            dangerouslySetInnerHTML={{ __html: props.title }}
+          ></Card.Title>
+          <Card.Text
+            dangerouslySetInnerHTML={{ __html: props.excerpt }}
+          ></Card.Text>
+          <Button variant="warning" href={props.readMore}>
+            Read more...
+          </Button>
+        </Card.Body>
+      </Card>
+    </div>
+  </post>
 )
 
 export default Post
