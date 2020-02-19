@@ -12,7 +12,7 @@ const BlogPostLayout = ({ data }) => {
       <SEO
         title={innertext(post.title)}
         description={innertext(post.excerpt)}
-        image={post.featured_media.source_url}
+        image={post.featured_media ? post.featured_media.source_url : null}
         keywords={post.categories.map(res => res.name).join(", ")}
       />
       <Header></Header>
