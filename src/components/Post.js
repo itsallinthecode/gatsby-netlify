@@ -12,7 +12,7 @@ const Post = props => (
         <Card.Text
           dangerouslySetInnerHTML={{ __html: props.excerpt }}
         ></Card.Text>
-        <Button variant="primary" href={props.readMore}>
+        <Button variant="warning" href={props.readMore}>
           Read more...
         </Button>
       </Card.Body>
